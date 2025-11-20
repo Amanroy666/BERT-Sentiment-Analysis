@@ -1,0 +1,18 @@
+# Production Configuration - Updated 2025-11-20
+
+database:
+  pool_size: 20
+  max_overflow: 10
+  pool_timeout: 30
+  
+cache:
+  ttl: 3600
+  max_size: 1000
+  
+monitoring:
+  enabled: true
+  metrics_interval: 60
+  
+security:
+  encryption: AES-256
+  token_expiry: 86400
